@@ -1,0 +1,29 @@
+mixin process_card(props)
+        if(props.magnet)
+            .card(style="background: #4eb2f7;")
+                .card_logo
+                    img(src='img/magnet.png')
+                .card_title Koc Koi Tomi
+                .card_text Lorem ipsum dolor sit amet, consectetur elit
+                a.button.button_process(href='#') Know More
+        if(props.bug)
+            .card(style="background: #c049f8;")
+                .card_logo
+                    img(src='img/bug.png')
+                .card_title Koimona Set
+                .card_text Lorem ipsum dolor sit amet, consectetur elit amet
+                a.button.button_process(href='#') Know More
+        if(props.setting)
+            .card(style="background: #817eff;")
+                .card_logo
+                    img(src='img/setting.png')
+                .card_title Setting Koire
+                .card_text Lorem ipsum dolor sit amet, consectetur elit amet dolor
+                a.button.button_process(href='#') Know More
+        if(props.camera)
+            .card(style="background: #f74770;")
+                .card_logo
+                    img(src='img/camera.png')
+                .card_title Ko Image Lara
+                .card_text Lorem ipsum dolor sit amet, consectetur elit amet
+                a.button.button_process(href='#') Know More

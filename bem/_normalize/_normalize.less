@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+/*     display: block; */
+    text-decoration: none;
+    color: grey;
+}
+span{
+    color: #ff5c36;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    opacity: .65;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+input[type='text']{
+    border: 1px solid white;
+    border-bottom: 1px solid grey;
+    opacity: .6;
+    width: 295px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    &:focus{
+    outline:none;
+    }
+}
+textarea{
+    border: 1px solid white;
+    border-bottom: 1px solid grey;
+    opacity: .6;
+    width: 295px;
+    resize: none;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    &:focus{
+    outline:none;
+    }
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+&::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+.layout{
+    max-width:14000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button{
+    font-size: 16px;
+    line-height: 25px;
+    background: white;
+    line-height: 25px;
+    padding: 15px 53px;
+    border-radius: 27px;
+/*     position: absolute; */
+    bottom: -25px;
+    &:hover{
+        box-shadow: 3px 3px 20px #b5b5b5;
+    }
+}
+.content_item{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: .55;
+    color: black;
+}

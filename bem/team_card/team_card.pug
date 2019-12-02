@@ -1,0 +1,22 @@
+mixin team_card(photo, design, english, commun, name, position, twitter, fb)
+            .card_item
+                .card_photo(style={background: photo})
+                    .card_content
+                        .card_skills
+                            .skills_item UI/UX Design
+                                .skills_layout
+                                    .design_color(style={width: design})
+                            .skills_item English
+                                .skills_layout
+                                    .english_color(style={width: english})
+                            .skills_item Communication
+                                .skills_layout
+                                    .commun_color(style={width: commun})
+                        .card_info
+                            .info_name=name
+                            .info_position=position
+                        .card_social
+                            .social_layout
+                                a.social_item_twitter(href=twitter)
+                                a.social_item_fb(href=fb)
+                                a.social_item_twitter(href=twitter)

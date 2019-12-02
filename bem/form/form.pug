@@ -1,0 +1,10 @@
+mixin form()
+    a(href='#' id='form_small').header_form-small Send A Message
+    .header_form(id='form')
+        a(href='#' id='form_closed').form_closed
+        form(method="POST" action=" " name="form" class='form_container')
+            p.form_title <span>Send</span> A Message
+            input(type="text", name='name', placeholder='Your Name')
+            input(type="text", name='email' placeholder='Your Email')
+            textarea(type="text", name='message' placeholder='Your Message' rows='5')
+            input(type='submit' value='Send Message' id='button' class='header_button')

@@ -1,0 +1,23 @@
+include ../form/form.pug
+
+mixin header()
+    .layout
+        .header
+            .header_menu
+                a(href='#').menu_logo
+                    img(src='img/Logo.png')
+                a(href='#' id='menu_button').menu_icon
+                .menu_container(id='menu_container')
+                    .menu_active(id='menu')
+                        a.menu_item.menu_item-color(href='#' id='menu_close') Menu
+                        a.menu_item(href='#woking_process') Working Process
+                        a.menu_item(href='#works') Featured Works
+                        a.menu_item(href='#services') Services
+                        a.menu_item(href='#team') Team
+                        a.menu_item(href='#client') Clients
+                        a.menu_item(href='#partners') Partners
+            .header_content
+                h1.h1 <span>Smart</span> Agency Landing Page
+                p.content_item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque rerum aspernatur dolorum at!
+            +form()
+

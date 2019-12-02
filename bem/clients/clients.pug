@@ -1,0 +1,33 @@
+include ../clients_card/clients_card.pug
+
+mixin clients()
+    .layout
+        .clients(id='client')
+            .clients_title
+                h1.h1 <span>Clients</span> Said
+                p.content_item  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vitae aspernatur
+            .clients_slider
+                +clients_card(
+                             'img/client_1.jpg',
+                             'Kita Say, ',
+                             'HK Direktor', 
+                             '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sequi quidem iure quasi recusandae alias. Eius totam officiis, rem et cum necessitatibus at voluptatum."'
+                             )
+                +clients_card(
+                            'img/client_2.jpg',
+                            'Al Rayah, ',
+                            'UX Director',
+                            '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptas, quisquam temporibus consequatur impedit provident eaque illum beatae ipsam, perspiciatis magni."'
+                            )
+                +clients_card(
+                            'img/client_1.jpg',
+                            'Kita Say, ',
+                            'HK Direktor', 
+                            '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sequi quidem iure quasi recusandae alias. Eius totam officiis, rem et cum necessitatibus at voluptatum."'
+                )
+                +clients_card(
+                            'img/client_2.jpg',
+                            'Al Rayah, ',
+                            'UX Director',
+                            '"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptas, quisquam temporibus consequatur impedit provident eaque illum beatae ipsam, perspiciatis magni."'
+                )

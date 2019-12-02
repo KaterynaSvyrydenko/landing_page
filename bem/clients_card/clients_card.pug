@@ -1,0 +1,9 @@
+mixin clients_card(src, name, position,text)
+    .clients_layout
+        .clients_review
+            .review_photo
+                img.photo_item(src=src)
+            .review_text=text
+            .review_rating
+            span.review_name=name
+            span.review_position=position

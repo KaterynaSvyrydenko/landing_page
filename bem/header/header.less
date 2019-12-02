@@ -1,0 +1,73 @@
+.layout{
+    .header{
+        position: relative;
+        background-image:
+            -webkit-linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
+            url('img/bg_1.jpg');
+        background-image:
+            -o-linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
+            url('img/bg_1.jpg');
+        background-image:
+            linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
+            url('img/bg_1.jpg');
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        &_menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 35px 150px 145px;
+                .menu_icon{
+                    background-image: url('img/menu_icon.svg');
+                    width: 39px;
+                    height: 23px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .menu_container{
+                    display: none;
+                    .menu_active{
+                        border-top: 1px solid grey;
+                        border-left: 1px solid grey;
+                        border-right: 1px solid grey;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 52;
+                        right: 150px;
+                        z-index: 2;
+                        .menu_item{
+                            height: 40px;
+                            width: 180px;
+                            background: white;
+                            line-height: 40px;
+                            padding-left: 15px;
+                            border-bottom: 1px solid grey;
+                            &:hover{
+                                background: #f7f7f7;
+                                color: #ff5c36;
+                            }
+                        }
+                        .menu_item-color{
+                            background: grey;
+                            color:white;
+                            &:hover{
+                                background: grey;
+                                color:white;
+                            }
+                        }
+                    }
+                }
+            }
+        &_content{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    
+}

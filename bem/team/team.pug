@@ -1,0 +1,39 @@
+include ../team_card/team_card.pug
+
+mixin team()
+    .layout
+        .team(id='team')
+            .team_title 
+                h1.h1 <span>Team</span> Chinen & Skills
+                p.content_item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci perferendis.
+            .team_gallery
+                +team_card(
+                    'url(img/team_1.jpg)',
+                    '75px',
+                    '100px',
+                    '85px',
+                    'Bedi Manos',
+                    'UI/UX Parena',
+                    '#',
+                    '#'
+                )
+                +team_card(
+                    'url(img/team_2.jpg)',
+                    '100px',
+                    '60px',
+                    '20px',
+                    'Al Rayah',
+                    'UI/UX Designer',
+                    '#',
+                    '#'
+                )
+                +team_card(
+                    'url(img/team_3.jpg)',
+                    '65px',
+                    '120px',
+                    '130px',
+                    'Ali Sayed',
+                    'UI/UX Designer',
+                    '#',
+                    '#'
+                )

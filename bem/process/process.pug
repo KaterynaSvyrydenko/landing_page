@@ -1,0 +1,23 @@
+include ../process_card/process_card.pug
+
+
+mixin process()
+    .layout
+        .process(id='woking_process')
+            .process_title
+                h1.h1 <span>Working</span> Process
+                p.content_item Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci perferendis.
+            .process_content
+                +process_card({
+                    magnet: 'true',
+                })
+                +process_card({
+                    bug: 'true',
+
+                })
+                +process_card({
+                    setting: 'true',
+                })
+                +process_card({
+                    camera: 'true',
+                })
