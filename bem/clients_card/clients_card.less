@@ -1,6 +1,7 @@
 .clients_layout{
     margin-top: 55px;
     box-sizing: border-box;
+    width: 555px;
     .clients_review{
         margin-right: 15px;
         margin-left: 15px;
@@ -24,7 +25,6 @@
             right: 215;
             .photo_item{
                 border-radius: 51px;
-                text-align: center;
             }
         }
         .review_text{
@@ -39,6 +39,16 @@
         .review_position{
             color: black;
             font-style: italic;
+        }
+    }
+}
+
+@media (max-width: 1390px) {
+    .clients_layout{
+        .clients_review{
+            .review_photo{
+                right: 190;
+            }
         }
     }
 }

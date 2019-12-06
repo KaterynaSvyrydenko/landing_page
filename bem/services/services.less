@@ -1,10 +1,13 @@
 .services{
-    padding: 140px 0 245px 150px;
+    padding: 140px 0 245px 0;
+    width: 100%;
+    margin: 0 auto;
     &_title{
         margin-bottom: 130px;
     }
     &_content{
         display: flex;
+        justify-content: center;
         .services_icon{
             width: 100px;
             .icon_item{
@@ -41,9 +44,8 @@
                 }
             }
             .button-services{
-                bottom: 235px;
-                border: 1px solid #E8E8E8;
                 position: absolute;
+                bottom: 188;
                 &:before{
                     content: ' ';
                     position: absolute;
@@ -57,9 +59,32 @@
         }
         .services_img{
             background: url('img/watch.png');
-            width: 100%;
+            width: 37%;
             height: 600px;
             background-repeat: no-repeat;
+        }
+    }
+}
+
+@media (max-width: 1390px) {
+    .services_img{
+        display: none;
+    }
+    .services_content{
+        .services_info{
+            margin: 0 10px 0 50px;
+            .info_text{
+                .info_item{
+                    padding-bottom: 0;
+                    font-size: 14px;
+                    line-height: 14px;
+                    width: 100%;
+                }
+            }
+            .button-services{
+                position: absolute; 
+                bottom: 0;
+            }
         }
     }
 }

@@ -1,12 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    min-width: 385px;
 }
 
 a{
 /*     display: block; */
     text-decoration: none;
     color: grey;
+    display: block;
 }
 span{
     color: #ff5c36;
@@ -75,8 +81,7 @@ button {
     padding: 0;
 }
 .layout{
-    max-width:14000px;
-    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -85,10 +90,10 @@ button {
     line-height: 25px;
     background: white;
     line-height: 25px;
-    padding: 15px 53px;
+    padding: 15px 34px 15px 52px;
     border-radius: 27px;
-/*     position: absolute; */
     bottom: -25px;
+    border: 1px solid #E8E8E8;
     &:hover{
         box-shadow: 3px 3px 20px #b5b5b5;
     }
@@ -102,4 +107,14 @@ button {
     line-height: 25px;
     opacity: .55;
     color: black;
+    padding-top: 15px;
+}
+
+@media (max-width: 960px){
+    .content_item{
+        width: 78.5%;
+    }
+    h1{
+        font-size: 34px;
+    }
 }
