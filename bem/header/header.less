@@ -1,20 +1,24 @@
-.layout{
-    .header{
-        position: relative;
-        background-image:
-            -webkit-linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
-            url('img/bg_1.jpg');
-        background-image:
-            -o-linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
-            url('img/bg_1.jpg');
-        background-image:
-            linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
-            url('img/bg_1.jpg');
+.header{
+    height: 100%;
+    position: relative;
+    background-image:
+        -webkit-linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
+        url('img/bg_1.jpg');
+    background-image:
+        -o-linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
+        url('img/bg_1.jpg');
+    background-image:
+        linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)),
+        url('img/bg_1.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .header_content{
         width: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-        &_menu{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .header_menu{
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -61,13 +65,30 @@
                     }
                 }
             }
-        &_content{
+        .header_main{
             width: 100%;
             margin: 0 auto;
         }
     }
 }
 
-@media (max-width: 1400px) {
-    
+@media (max-width: 960px){
+    .header{
+         background-image: linear-gradient(#F5F5F5 70%, rgba(255,255,255, 0)), url('img/bg_1_960.jpg');
+        .header_content{
+            .header_main{
+                margin: 0 20px;
+                .content_item{
+                    font-size: 20px;
+                    line-height: 36px;
+                    width: 78.5%;
+                }
+            }
+            .header_menu{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+    }
 }
+

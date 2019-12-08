@@ -25,12 +25,20 @@ $('#menu_close').on('click', function(){
     $('#menu_button').show('400');
 });
 
+/*header form closed*/
 $('#form_closed').on('click', function(){
     $('#form').hide('slow');
     console.log('ok')
 });
-
+/*header form open*/
  $('#form_small').on('click', function(){
     $('#form').show('slow');
     console.log('show')
- })
+ });
+
+ $(document).ready(function(){
+    if($('.header').width() <= '960'){
+        $('#form').hide();
+        console.log($('.header').width())
+    };
+ });
