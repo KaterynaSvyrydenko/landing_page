@@ -107,7 +107,7 @@ button {
   }
 }
 .header {
-  height: 100vh;
+  height: 100%;
   position: relative;
   background-image: -webkit-linear-gradient(#F5F5F5 70%, rgba(255, 255, 255, 0)), url('img/bg_1.jpg');
   background-image: -o-linear-gradient(#F5F5F5 70%, rgba(255, 255, 255, 0)), url('img/bg_1.jpg');
@@ -414,6 +414,9 @@ button {
   .services_img {
     display: none;
   }
+  .services_content {
+    padding: 0 20px;
+  }
   .services_content .services_info {
     margin: 0 10px 0 50px;
   }
@@ -705,7 +708,7 @@ button {
   text-align: center;
   position: relative;
   padding: 85px 15px 35px;
-  border: 1px solid #9e9d9d;
+  border: 2px solid #9e9d9d;
   border-radius: 4px;
 }
 .clients_layout .clients_review:hover {
@@ -736,8 +739,24 @@ button {
   font-style: italic;
 }
 @media (max-width: 1390px) {
+  .clients_layout .clients_review:hover {
+    border: 2px solid #9e9d9d;
+    box-shadow: none;
+  }
   .clients_layout .clients_review .review_photo {
     right: 190;
+  }
+}
+@media (max-width: 980px) {
+  .clients_slider {
+    flex-wrap: wrap;
+  }
+  .clients_slider .clients_layout {
+    width: 78.5%;
+    margin: 80px auto 0;
+  }
+  .clients_slider .clients_layout .clients_review .review_photo {
+    right: 135;
   }
 }
 .partner_layout {
